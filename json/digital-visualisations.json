@@ -1,0 +1,37 @@
+
+[
+  {
+  "slug": "handbag-visual",
+  "name": "Handbag Visualisation",
+  "description": "",
+},{
+    "slug": "backpack-visual",
+    "name": "Backpack Visualisation",
+    "description": "",
+
+  },{
+    "slug": "tote-visual",
+    "name": "Tote Bag Visualisation",
+    "description": "",
+  },{
+    "slug": "room-visual",
+    "name": "Digital Room Visualisation",
+    "description": "A completely digital living space constructed in Adobe Photoshop to visualise a potential clients living space.",
+  },{
+  "slug": "70s-visual",
+  "name": "70's Collection Design Boards",
+  "description": "A trio of design boards showcasing some potential uses of these 70s, spring designs."
+  },{
+    "slug": "digital-portrait",
+    "name": "Digital Stylized Self Portrait",
+    "description": "Various colourways of a digital self portrait created in Adobe Photoshop."
+    },{
+      "slug": "digital-portrait",
+      "name": "Digital Stylized Self Portrait",
+      "description": "Various colourways of a digital self portrait created in Adobe Photoshop."
+      },{
+        "slug": "moodboards",
+        "name": "Moodboard Collection",
+        "description": "A collection of moodboards relating to various concepts and ideas."
+        }
+]
