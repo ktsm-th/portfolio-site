@@ -1,8 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+.image-gallery-svg {
+  color: white;
+  height: 75px !important;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;

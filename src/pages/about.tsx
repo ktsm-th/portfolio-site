@@ -45,7 +45,7 @@ export default function About() {
             </div>
             <div className="mt-4">
               <label className="font-bold text-l" for="message">Message:</label>
-                <textarea id="message" name="message" className="block p-2.5 w-full h-24 text-sm text-gray-900 bg-gray-50 border-4 border-black  focus:ring-0 focus:ring-0 resize-none" />
+                <textarea id="message" name="message" className="block p-2.5 w-full h-24 text-sm text-gray-900 bg-white  focus:ring-0 focus:ring-0 resize-none" />
               </div>
 
           <button type="submit" className="text-center text-black font-bold bg-gray-200 w-32 h-8 mt-4 flex justify-center items-center text-base mr-2 hover:bg-black hover:text-white">SEND</button>

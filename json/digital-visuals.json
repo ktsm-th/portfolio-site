@@ -1,0 +1,38 @@
+[
+  {
+  "slug": "handbag-visual",
+  "name": "Anatomy-based Handbag Visualisation",
+  "description": "A digitally collaged visualisation to show the intended application of a two layered, anatomy based screen print. The intention was to create a visually appealing, eye-catching mockup which was part of a larger, cohesive style of branding",
+  "number_of_images": 2
+},{
+    "slug": "backpack-visual",
+    "name": "Anatomy-based Backpack Visualisation",
+    "description": "A digitally collaged visualisation to show the intended application of a four way, anatomy based screen print. The intention was to create a visually appealing, eye-catching mockup which was part of a larger, cohesive style of branding",
+    "number_of_images": 2
+  },{
+    "slug": "tote-visual",
+    "name": "Tote Bag Visualisation",
+    "description": "A digitally collaged visualisation to show the intended application of a digital, anatomy based print. The intention was to create a visually appealing, eye-catching mockup which was part of a larger, cohesive style of branding",
+    "number_of_images": 4
+  },{
+    "slug": "room-visual",
+    "name": "Digital Room Visualisations",
+    "description": "A range of completely digital living spaces constructed in Adobe Photoshop to visualise a potential clients living space.",
+    "number_of_images": 3
+  },{
+    "slug": "70s-visual",
+    "name": "70's Collection Design Boards",
+    "description": "A trio of design boards showcasing some potential uses of these 70s, spring designs.",
+    "number_of_images": 3
+  },{
+    "slug": "digital-portrait",
+    "name": "Digital Stylized Self Portrait",
+    "description": "Various colourways of a digital self portrait created in Adobe Photoshop.",
+    "number_of_images": 4
+    },{
+        "slug": "moodboards",
+        "name": "Client / Moodboards",
+        "description": "A collection of Client and Moodboards relating to various concepts and ideas.",
+        "number_of_images": 4
+        }
+]
