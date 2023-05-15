@@ -1,4 +1,5 @@
 import ListTile from '@/components/list-tile';
+import dynamic from 'next/dynamic';
 import useSWR from 'swr';
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
@@ -11,7 +12,7 @@ interface Project {
   number_of_images: number,
 }
 
-export default function Development() {
+const Development = () => {
   const { data, error } = useSWR('/api/development', fetcher);
   if (!data) return <div>Loading...</div>;
   return (
@@ -38,3 +39,7 @@ export default function Development() {
     </main>
   )
 }
+
+export default dynamic(() => Promise.resolve(Development), {
+  ssr: false,
+});
