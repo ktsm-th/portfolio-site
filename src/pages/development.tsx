@@ -1,7 +1,15 @@
 import ListTile from '@/components/list-tile';
-import Image from 'next/image'
 import useSWR from 'swr';
-const fetcher = (url:string) => fetch(url).then((res) => res.json())
+const fetcher = (url: string) => fetch(url).then((res) => res.json())
+
+interface Project {
+  slug: string,
+  name: string,
+  description: string,
+  live_link: string,
+  repository_link: string,
+  number_of_images: number,
+}
 
 export default function Development() {
   const { data, error } = useSWR('/api/development', fetcher);
@@ -18,7 +26,7 @@ export default function Development() {
         </div>
         </div>
 
-      {JSON.parse(data).map((project: object, index: number) => (
+      {JSON.parse(data).map((project: Project, index: number) => (
         <ListTile
           key={index}
           name={project.name}

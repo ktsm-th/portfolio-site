@@ -6,6 +6,14 @@ const fetcher = (url:string) => fetch(url).then((res) => res.json())
 export default function Digital() {
   const { data, error } = useSWR('/api/digital', fetcher);
   if (!data) return <div>Loading...</div>;
+
+  interface Digital {
+    slug: string,
+    name: string,
+    description: string,
+    number_of_images: number,
+  }
+
   return (
     <main className="flex w-4/5 mx-auto flex-col sm-desktop:flex-row items-center sm-desktop:flex-wrap">
       <div className='w-3/4 mx-auto'>
@@ -18,7 +26,7 @@ export default function Digital() {
         </div>
         </div>
 
-      {JSON.parse(data).map((digital: object, index: number) => (
+      {JSON.parse(data).map((digital: Digital, index: number) => (
         <ListTile
           key={index}
           name={digital.name}

@@ -1,7 +1,14 @@
 import ListTile from '@/components/list-tile';
 import Image from 'next/image'
 import useSWR from 'swr';
-const fetcher = (url:string) => fetch(url).then((res) => res.json())
+const fetcher = (url: string) => fetch(url).then((res) => res.json())
+
+interface Pattern {
+  slug: string,
+  name: string,
+  description: string,
+  number_of_images: number,
+}
 
 export default function Pattern() {
   const { data, error } = useSWR('/api/patterns', fetcher);
@@ -18,7 +25,7 @@ export default function Pattern() {
         </div>
         </div>
 
-      {JSON.parse(data).map((pattern: object, index: number) => (
+      {JSON.parse(data).map((pattern: Pattern, index: number) => (
         <ListTile
           key={index}
           name={pattern.name}

@@ -5,7 +5,7 @@ type ListTileProps = {
   link: string,
   name: string,
   image: string,
-  number_of_images: number,
+  number_of_images?: number,
   mirror?: boolean
 }
 

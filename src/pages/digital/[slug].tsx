@@ -7,11 +7,18 @@ import Link from 'next/link';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
+interface Digital {
+  slug: string,
+  name: string,
+  description: string,
+  number_of_images: number,
+}
+
 export default function PatternDetail() {
   const router = useRouter();
   const { data, error } = useSWR('/api/digital', fetcher);
   if (!data) return <div>Loading...</div>;
-  const visual = JSON.parse(data).find((visual) => visual.slug === router.query.slug)
+  const visual = JSON.parse(data).find((visual: Digital) => visual.slug === router.query.slug)
   if (!visual) return <div>Loading...</div>;
   const images = [];
 

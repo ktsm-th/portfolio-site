@@ -6,11 +6,18 @@ import ImageGallery from 'react-image-gallery';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
+interface Pattern {
+  slug: string,
+  name: string,
+  description: string,
+  number_of_images: number,
+}
+
 export default function PatternDetail() {
   const router = useRouter();
   const { data, error } = useSWR('/api/patterns', fetcher);
   if (!data) return <div>Loading...</div>;
-  const pattern = JSON.parse(data).find((pattern) => pattern.slug === router.query.slug)
+  const pattern = JSON.parse(data).find((pattern: Pattern) => pattern.slug === router.query.slug)
   if (!pattern) return <div>Loading...</div>;
   const images = [];
 

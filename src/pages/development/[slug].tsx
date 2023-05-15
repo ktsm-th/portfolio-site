@@ -7,11 +7,20 @@ import Link from 'next/link';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
+interface Project {
+  slug: string,
+  name: string,
+  description: string,
+  live_link: string,
+  repository_link: string,
+  number_of_images: number,
+}
+
 export default function PatternDetail() {
   const router = useRouter();
   const { data, error } = useSWR('/api/development', fetcher);
   if (!data) return <div>Loading...</div>;
-  const project = JSON.parse(data).find((project) => project.slug === router.query.slug)
+  const project = JSON.parse(data).find((project: Project) => project.slug === router.query.slug)
   if (!project) return <div>Loading...</div>;
   const images = [];
 
