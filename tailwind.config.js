@@ -13,6 +13,9 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'header-img': "url('/header-img.jpg')"
       },
+      screens: {
+        'sm-desktop': '1365px',
+      },
     },
   },
   plugins: [],

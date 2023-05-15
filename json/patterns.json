@@ -1,7 +1,7 @@
 [
   {
     "slug": "abstract-refraction",
-    "name": "ABSTRACT REFRACTION",
+    "name": "REFRACTION",
     "description": "This pattern was using a mix of physical and digital printing techniques. Initally, pigments were open screen printed onto paper, then the resulting marks were photographed and taken into Adobe Photoshop where it was made into a repeat and digitally enhanced.",
     "number_of_images": 2
     }, {
@@ -20,20 +20,50 @@
     "description": "An all over, colourful print created by digitally manipulating medical imagery in Adobe Photoshop.",
     "number_of_images": 3
   },{
-    "slug": "glitched-tiles",
-    "name": "GLITCHED TILES",
-    "description": "An all over, colourful print created by digitally manipulating medical imagery in Adobe Photoshop.",
+    "slug": "glitched",
+    "name": "GLITCHED",
+    "description": "A glitch effect tile print created using physical mark making and digital manipulation.",
     "number_of_images": 3
+  },{
+    "slug": "caged",
+    "name": "CAGED",
+    "description": "A four layered design screen printed onto stitched leather; the flourecent colourways are intended to 'glow' when displayed in blue lighting.",
+    "number_of_images": 4
   },{
     "slug": "handy",
     "name": "HANDY",
-    "description": "ghhgh",
+    "description": "A two layered design focusing on both the bones and veins found in the hand. The design was hand drawn, scanned and edited.",
     "number_of_images": 1
+  },{
+    "slug": "watercolours",
+    "name": "WATERCOLOURS",
+    "description": "Originally a placement watercolour design which was digtally altered to create an all over repeat - inspired by the wacky designs often found on buses and train seating.",
+    "number_of_images": 4
   },{
     "slug": "hyper-waves",
     "name": "HYPER WAVES",
     "description": "A bright, layered design created using just one marker, which was digitally altered to create a fun, layered pattern.",
     "number_of_images": 4
+  },{
+    "slug": "scrape",
+    "name": "SCRAPE",
+    "description": "Made using otherwise wasted screen printing pigment, digitally altered and layred to produce various colourways.",
+    "number_of_images": 3
+  },{
+    "slug": "oil-spill",
+    "name": "OIL SPILL",
+    "description": "A colourful, over the top design created by digitally manipulating dyed fabric, with the intention of bringing hyperbrights into interior furnishings.",
+    "number_of_images": 4
+  },{
+    "slug": "hometown",
+    "name": "HOMETOWN",
+    "description": "An entirely digitally designed print highlighting some of my favourite elements of my unoffical hometown, Rugby. Shown in a range of single colours, as well as layered over my other designs.",
+    "number_of_images": 4
+  },{
+    "slug": "bubbles",
+    "name": "BUBBLES",
+    "description": "A less hectic print which started with motifs generated from slate and twigs. Intended to be fun and playful, and capture the iridecent colours of bubbles.",
+    "number_of_images": 3
   },{
     "slug": "70s-florals",
     "name": "CUTESY FLORALS",

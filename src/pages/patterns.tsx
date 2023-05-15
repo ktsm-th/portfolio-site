@@ -7,12 +7,22 @@ export default function Pattern() {
   const { data, error } = useSWR('/api/patterns', fetcher);
   if (!data) return <div>Loading...</div>;
   return (
-    <main className="flex items-center flex-wrap w-1/2 mx-auto">
+    <main className="flex w-4/5 mx-auto flex-col sm-desktop:flex-row items-center sm-desktop:flex-wrap">
+      <div className='w-3/4 mx-auto'>
+        <h2 className="font-bold text-3xl mt-2 text-center">PATTERN CATALOGUE</h2>
+        <div className="inline-flex items-center justify-center w-full">
+          <hr className="w-full h-1 my-8 bg-black  border-0 rounded" />
+          <div className="absolute px-4 -translate-x-1/2 bg-white left-1/2">
+          <h3 className="font-bold text-center text-l">A range of patterns which emphasise my passion for hectic colour and abstract imagery. </h3>
+         </div>
+        </div>
+        </div>
+
       {JSON.parse(data).map((pattern: object, index: number) => (
         <ListTile
           key={index}
-          link={`/patterns/${pattern.slug}`}
           name={pattern.name}
+          link={`/patterns/${pattern.slug}`}
           image={`/patterns/${pattern.slug}/1.jpg`}
           mirror={ index % 2 == 1 ? true : false }
         />

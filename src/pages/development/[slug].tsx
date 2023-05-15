@@ -35,7 +35,7 @@ export default function PatternDetail() {
 
           <div className="inline-flex items-center justify-center w-full mt-24">
               <hr className="w-96 h-1  bg-black border-0 rounded" />
-              <div className="absolute px-4 -translate-x--1/2  bg-gray-100">
+              <div className="absolute px-4 -translate-x--1/2  bg-white">
               <h3 className="font-bold text-l">LINKS</h3>
             </div>
           </div>

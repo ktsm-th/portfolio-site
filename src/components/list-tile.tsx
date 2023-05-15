@@ -11,10 +11,10 @@ type ListTileProps = {
 
 export default function ListTile({ link, name, image, mirror = false }: ListTileProps) {
   return (
-    <div className={`flex justify-around basis-2/4 mt-4 ${mirror ? "align-self-start flex-row-reverse" : ""}`}>
-      <div className="self-end mb-4 flex flex-col">
-        <h3 className="font-bold text-right text-xl ml-auto mr-4">{name}</h3>
-        <button className="ml-auto text-center text-white font-bold bg-black w-24 h-8 flex justify-center items-center text-base mr-4 mt-1 hover:bg-gray-200 hover:text-black  ">
+    <div className={`flex sm-desktop:justify-end sm-desktop:flex-row flex-col-reverse basis-1/2 mt-4 ${mirror ? "sm-desktop:align-self-start sm-desktop:flex-row-reverse sm-desktop:pl-2" : "sm-desktop:pr-2"}`}>
+      <div className={`sm-desktop:self-end mb-4 flex flex-col items-center ${mirror ? "sm-desktop:ml-4 sm-desktop:justify-start sm-desktop:items-start" : "sm-desktop:mr-4"}`}>
+        <h3 className={`font-bold text-xl mt-2 sm-desktop:mt-0 ${mirror ? "" : "sm-desktop:text-right sm-desktop:ml-auto"}`}>{name}</h3>
+        <button className={`text-center text-white font-bold bg-black w-24 h-8 flex justify-center items-center text-base mt-1 hover:bg-gray-200 hover:text-black ${mirror ? "" : "sm-desktop:ml-auto"}`}>
           <Link href={link}>DETAILS</Link>
         </button>
       </div>
@@ -23,7 +23,7 @@ export default function ListTile({ link, name, image, mirror = false }: ListTile
         width={275}
         height={275}
         alt="Profile Image"
-        className=" border-8 border-black w-72 h-72 object-cover"
+        className=" border-8 border-black w-[275px] h-[275px] object-cover object-top"
       />
     </div>
   )
