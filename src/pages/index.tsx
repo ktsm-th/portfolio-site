@@ -16,7 +16,7 @@ export default function About() {
         <div className="w-96 ml-8">
           <h2 className="font-bold text-3xl">KATIE SMITH</h2>
           <h3 className="font-bold text-l ml-16">Software Developer & Textile Designer</h3>
-          <p className="mt-8">Hello! I'm Katie, a soon-to-be Textile Design graduate who has been working on expanding development skills alongside my degree, focusing on Javascript (React, next.js) and creating & using REST APIs. Driven and eager for self improvement, as well as the development of my skills through the support of a team, while also expanding the ability to troubleshoot and solve issues independently. Hoping to start a career within the software development industry, particularly within tech for good.</p>
+          <p className="mt-8">Hello! I&apos;m Katie, a soon-to-be Textile Design graduate who has been working on expanding development skills alongside my degree, focusing on Javascript (React, next.js) and creating & using REST APIs. Driven and eager for self improvement, as well as the development of my skills through the support of a team, while also expanding the ability to troubleshoot and solve issues independently. Hoping to start a career within the software development industry, particularly within tech for good.</p>
         </div>
       </div>
       <div className="inline-flex items-center justify-center w-full">
