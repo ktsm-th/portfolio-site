@@ -1,9 +1,10 @@
 import ListTile from '@/components/list-tile';
+import dynamic from 'next/dynamic';
 import Image from 'next/image'
 import useSWR from 'swr';
 const fetcher = (url:string) => fetch(url).then((res) => res.json())
 
-export default function Digital() {
+const Digital = () => {
   const { data, error } = useSWR('/api/digital', fetcher);
   if (!data) return <div>Loading...</div>;
 
@@ -38,3 +39,7 @@ export default function Digital() {
     </main>
   )
 }
+
+export default dynamic(() => Promise.resolve(Digital), {
+  ssr: false,
+});

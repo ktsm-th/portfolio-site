@@ -1,4 +1,5 @@
 import ListTile from '@/components/list-tile';
+import dynamic from 'next/dynamic';
 import Image from 'next/image'
 import useSWR from 'swr';
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
@@ -10,7 +11,7 @@ interface Pattern {
   number_of_images: number,
 }
 
-export default function Pattern() {
+const Pattern = () => {
   const { data, error } = useSWR('/api/patterns', fetcher);
   if (!data) return <div>Loading...</div>;
   return (
@@ -37,3 +38,7 @@ export default function Pattern() {
     </main>
   )
 }
+
+export default dynamic(() => Promise.resolve(Pattern), {
+  ssr: false,
+});

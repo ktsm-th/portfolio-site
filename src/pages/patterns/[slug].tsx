@@ -3,6 +3,7 @@ import Image from 'next/image'
 import useSWR from 'swr';
 import { useRouter } from 'next/router';
 import ImageGallery from 'react-image-gallery';
+import dynamic from 'next/dynamic';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
@@ -13,7 +14,7 @@ interface Pattern {
   number_of_images: number,
 }
 
-export default function PatternDetail() {
+const PatternDetail = () => {
   const router = useRouter();
   const { data, error } = useSWR('/api/patterns', fetcher);
   if (!data) return <div>Loading...</div>;
@@ -43,3 +44,7 @@ export default function PatternDetail() {
     </main>
   )
 }
+
+export default dynamic(() => Promise.resolve(PatternDetail), {
+  ssr: false,
+});
