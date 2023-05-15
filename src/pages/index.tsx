@@ -1,8 +1,12 @@
+import Head from 'next/head';
 import Image from 'next/image'
 import Link from 'next/link';
 export default function About() {
   return (
     <main>
+      <Head>
+        <title>Katie Smith</title>
+      </Head>
       <div className="flex justify-center mt-8 mb-8">
         <div>
           <Image

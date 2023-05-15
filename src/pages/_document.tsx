@@ -5,7 +5,9 @@ import Link from 'next/link'
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <body>
         <header>
           <div className="bannerIMG w-full flex justify-center items-center h-28 bg-header-img bg-cover bg-center">
