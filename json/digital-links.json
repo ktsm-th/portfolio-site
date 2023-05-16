@@ -3,7 +3,7 @@
   {
     "slug": "portfolio-site",
     "name": "Portfolio Website",
-    "description": "This portfolio site! Planned in Figma and created using Next.js and styled using Tailwind",
+    "description": "This portfolio site, planned in Figma, created using Next.js and styled using Tailwind",
     "repository_link":"https://github.com/ktsm-th/portfolio-site",
     "live_link":"https://www.katiesmith.dev/",
     "number_of_images":"3"

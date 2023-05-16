@@ -6,6 +6,7 @@ import ImageGallery from 'react-image-gallery';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import Spinner from '@/components/spinner';
+import Head from 'next/head';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
@@ -35,6 +36,9 @@ const PatternDetail = () => {
 
   return (
     <main>
+      <Head>
+      <title>{project.name} | Katie Smith</title>
+      </Head>
       <div className="flex justify-center mt-8 mb-8">
         <div className=" w-auto max-w-2xl border-8 border-black">
           <ImageGallery additionalClass="" items={images} />
