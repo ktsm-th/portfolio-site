@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import ImageGallery from 'react-image-gallery';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import Spinner from '@/components/spinner';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
@@ -18,9 +19,9 @@ interface Digital {
 const DigitalDetail = () => {
   const router = useRouter();
   const { data, error } = useSWR('/api/digital', fetcher);
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <Spinner/>
   const visual = JSON.parse(data).find((visual: Digital) => visual.slug === router.query.slug)
-  if (!visual) return <div>Loading...</div>;
+  if (!visual) return <Spinner/>;
   const images = [];
 
   for (let i = 1; i <= visual.number_of_images; i++) {

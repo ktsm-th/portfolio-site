@@ -4,6 +4,7 @@ import useSWR from 'swr';
 import { useRouter } from 'next/router';
 import ImageGallery from 'react-image-gallery';
 import dynamic from 'next/dynamic';
+import Spinner from '@/components/spinner';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
@@ -17,9 +18,13 @@ interface Pattern {
 const PatternDetail = () => {
   const router = useRouter();
   const { data, error } = useSWR('/api/patterns', fetcher);
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <div> <Spinner/>
+  </div>;
+
   const pattern = JSON.parse(data).find((pattern: Pattern) => pattern.slug === router.query.slug)
-  if (!pattern) return <div>Loading...</div>;
+  if (!pattern) return <div role="status">
+
+</div>;
   const images = [];
 
   for (let i = 1; i <= pattern.number_of_images; i++) {

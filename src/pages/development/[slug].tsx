@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import ImageGallery from 'react-image-gallery';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+import Spinner from '@/components/spinner';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
@@ -20,9 +21,9 @@ interface Project {
 const PatternDetail = () => {
   const router = useRouter();
   const { data, error } = useSWR('/api/development', fetcher);
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <Spinner/>;
   const project = JSON.parse(data).find((project: Project) => project.slug === router.query.slug)
-  if (!project) return <div>Loading...</div>;
+  if (!project) return <Spinner/>;
   const images = [];
 
   for (let i = 1; i <= project.number_of_images; i++) {
@@ -59,6 +60,17 @@ const PatternDetail = () => {
                 alt="github"
                 />
                 <li className="ml-2 mt-1">{project.repository_link}</li>
+                </Link>
+          </div>
+          <div className="flex items-center mt-4 hover:opacity-20">
+            <Link className="flex" href={project.live_link}>
+              <Image
+                src="/live.png"
+                width={30}
+                height={30}
+                alt="live link"
+                />
+                <li className="ml-2 mt-1">{project.live_link}</li>
                 </Link>
             </div>
           </div>

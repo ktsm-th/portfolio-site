@@ -4,15 +4,15 @@
     "slug": "portfolio-site",
     "name": "Portfolio Website",
     "description": "This portfolio site! Planned in Figma and created using Next.js and styled using Tailwind",
-    "repository_link":"https://github.com/ktsm-th/???",
-    "live_link":"",
-    "number_of_images":"1"
+    "repository_link":"https://github.com/ktsm-th/portfolio-site",
+    "live_link":"https://www.katiesmith.dev/",
+    "number_of_images":"3"
   },{
     "slug": "pokemon-search",
     "name": "Pokémon Search",
     "description": "A vanilla Javascript web application which utilizes data pulled from PokéAPI, styled with tailwind.",
     "repository_link":"https://github.com/ktsm-th/pokemon-search-js",
-    "live_link":"",
+    "live_link":"https://ktsm-th.github.io/pokemon-search-js/",
     "number_of_images": 3
   },{
     "slug": "tv-search",

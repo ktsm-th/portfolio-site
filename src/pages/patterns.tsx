@@ -3,6 +3,8 @@ import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import Image from 'next/image'
 import useSWR from 'swr';
+import Spinner from '@/components/spinner';
+
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
 interface Pattern {
@@ -14,7 +16,7 @@ interface Pattern {
 
 const Pattern = () => {
   const { data, error } = useSWR('/api/patterns', fetcher);
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <Spinner/>;
   return (
     <main className="flex w-4/5 mx-auto flex-col sm-desktop:flex-row items-center sm-desktop:flex-wrap">
       <Head>

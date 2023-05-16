@@ -1,6 +1,8 @@
 import ListTile from '@/components/list-tile';
 import dynamic from 'next/dynamic';
 import useSWR from 'swr';
+import Head from 'next/head';
+import Spinner from '@/components/spinner';
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
 interface Project {
@@ -14,9 +16,12 @@ interface Project {
 
 const Development = () => {
   const { data, error } = useSWR('/api/development', fetcher);
-  if (!data) return <div>Loading...</div>;
+  if (!data) return <Spinner/>;
   return (
     <main className="flex w-4/5 mx-auto flex-col sm-desktop:flex-row items-center sm-desktop:flex-wrap">
+      <Head>
+        <title>Development | Katie Smith</title>
+      </Head>
       <div className='w-3/4 mx-auto'>
         <h2 className="font-bold text-3xl mt-2 text-center">DEVELOPMENT PROJECTS</h2>
         <div className="inline-flex items-center justify-center w-full">
