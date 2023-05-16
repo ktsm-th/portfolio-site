@@ -31,7 +31,7 @@ export default function About() {
       </div>
 
       <div className="flex justify-center mb-8">
-        {/* <div className="w-96 ml-8" >
+        <div className="w-96 ml-8" >
           <form action="/send-data-here" method="post">
             <div className="flex">
             <div className="w-1/2 mr-1">
@@ -54,7 +54,7 @@ export default function About() {
 
           <button type="submit" className="text-center text-black font-bold bg-gray-200 w-32 h-8 mt-4 flex justify-center items-center text-base mr-2 hover:bg-black hover:text-white">SEND</button>
         </form>
-        </div> */}
+        </div>
         <div className="w-96 ml-8 flex content-center">
           <ul>
             <div className="flex items-center hover:opacity-20">
@@ -101,6 +101,15 @@ export default function About() {
                 className=""
                 />
                 <li className="ml-2">hello@katiesmith.dev</li>
+            </div>
+            <div className="flex justify-end mr-28 mt-4" >
+            <Image
+                src="/favicon.png"
+                alt="Profile Image"
+                height="100"
+                width="100"
+                className=""
+              />
             </div>
           </ul>
         </div>
