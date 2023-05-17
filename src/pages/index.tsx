@@ -35,20 +35,20 @@ export default function About() {
           <form action="/send-data-here" method="post">
             <div className="flex">
             <div className="w-1/2 mr-1">
-              <label className="font-bold text-l" for="first">First name:</label>
+              <label className="font-bold text-l" htmlFor="first">First name:</label>
                   <input  className="w-auto border-2" type="text" id="first" name="first" />
             </div>
             <div className="w-1/2 ml-1">
-              <label className="font-bold text-l" for="last">Last name:</label>
+              <label className="font-bold text-l" htmlFor="last">Last name:</label>
                 <input className="w-full border-2" type="text" id="last" name="last" />
                 </div>
             </div>
             <div className="mt-4">
-              <label className="font-bold text-l" for="email">Email:</label>
+              <label className="font-bold text-l" htmlFor="email">Email:</label>
                 <input className="w-full border-2" type="text" id="email" name="email" />
             </div>
             <div className="mt-4">
-              <label className="font-bold text-l" for="message">Message:</label>
+              <label className="font-bold text-l" htmlFor="message">Message:</label>
                 <textarea id="message" name="message" className="block p-2.5 w-full h-24 text-sm text-gray-900 bg-white border-2 focus:ring-0 focus:ring-0 resize-none" />
               </div>
 
