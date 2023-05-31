@@ -10,17 +10,17 @@
   },{
     "slug": "pokemon-search",
     "name": "Pokémon Search",
-    "description": "A vanilla Javascript web application which utilizes data pulled from PokéAPI, styled with tailwind.",
+    "description": "A vanilla Javascript web application which utilizes data pulled from PokéAPI, styled with Tailwind.",
     "repository_link":"https://github.com/ktsm-th/pokemon-search-js",
     "live_link":"https://ktsm-th.github.io/pokemon-search-js/",
     "number_of_images": 3
   },{
     "slug": "tv-search",
     "name": "TV Search",
-    "description": "",
+    "description": "A vanilla Javascript web application which utilizes data pulled from TVMaze, styled with Bulma.",
     "repository_link":"",
     "live_link":"",
-    "number_of_images":""
+    "number_of_images":"2"
   }
 
 ]
