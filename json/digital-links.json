@@ -18,7 +18,7 @@
     "slug": "tv-search",
     "name": "TV Search",
     "description": "A vanilla Javascript web application which utilizes data pulled from TVMaze, styled with Bulma.",
-    "repository_link":"",
+    "repository_link":"https://github.com/ktsm-th/tv-search",
     "live_link":"",
     "number_of_images":"2"
   }
