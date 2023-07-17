@@ -48,35 +48,48 @@ const PatternDetail = () => {
           <h2 className="mt-4 font-bold text-3xl">{ project.name }</h2>
           <p className="mt-2">{project.description}</p>
 
-          <div className="inline-flex items-center justify-center w-full mt-24">
+
+          {project.repository_link.length > 0 || project.live_link.length > 0 ? (
+            <div className="inline-flex items-center justify-center w-full mt-24">
               <hr className="w-96 h-1  bg-black border-0 rounded" />
               <div className="absolute px-4 -translate-x--1/2  bg-white">
-              <h3 className="font-bold text-l">LINKS</h3>
+                <h3 className="font-bold text-l">LINKS</h3>
+              </div>
             </div>
-          </div>
+          ) : (
+              <div></div>
+          )}
 
-          <div className="flex items-center mt-4 hover:opacity-20">
-            <Link className="flex" href={project.repository_link}>
-              <Image
-                src="/github.png"
-                width={30}
-                height={30}
-                alt="github"
+          {project.repository_link.length > 0 ? (
+            <div className="flex items-center mt-4 hover:opacity-20">
+              <Link className="flex" href={project.repository_link}>
+                <Image
+                  src="/github.png"
+                  width={30}
+                  height={30}
+                  alt="github"
+                  className="h-8 w-8"
                 />
                 <li className="ml-2 mt-1">{project.repository_link}</li>
-                </Link>
-          </div>
-          <div className="flex items-center mt-4 hover:opacity-20">
-            <Link className="flex" href={project.live_link}>
-              <Image
-                src="/live.png"
-                width={30}
-                height={30}
-                alt="live link"
+              </Link>
+            </div>) : (
+              <div></div>
+          )}
+
+          {project.live_link.length > 0 ? (
+            <div className="flex items-center mt-4 hover:opacity-20">
+              <Link className="flex" href={project.live_link}>
+                <Image
+                  src="/live.png"
+                  width={30}
+                  height={30}
+                  alt="live link"
                 />
                 <li className="ml-2 mt-1">{project.live_link}</li>
-                </Link>
-            </div>
+              </Link>
+            </div>) : (
+              <div></div>
+            )}
           </div>
       </div>
     </main>
