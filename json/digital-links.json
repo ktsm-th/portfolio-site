@@ -8,6 +8,13 @@
     "live_link":"https://www.katiesmith.dev/",
     "number_of_images":"3"
   },{
+    "slug": "video-game-database-api",
+    "name": "Video Game Database API",
+    "description": "A Laravel API focusing on videogames and consoles. Uses Laravel Sail and MySQL",
+    "repository_link":"https://github.com/ktsm-th/video-game-database-api",
+    "live_link":"",
+    "number_of_images":"2"
+  },{
     "slug": "pokemon-search",
     "name": "Pokémon Search",
     "description": "A vanilla Javascript web application which utilizes data pulled from PokéAPI, styled with Tailwind.",
