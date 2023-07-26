@@ -7,7 +7,7 @@ export default function Navbar() {
         {/* <NavbarLink link="/" text="Home" /> */}
         <NavbarLink link="/" text="About Me" />
         <NavbarLink link="/development" text="Development" />
-        <NavbarLink link="/patterns" text="Patterns" />
+        <NavbarLink link="/patterns" text="Designs" />
         <NavbarLink link="/digital" text="Digital" />
 
       </ul>

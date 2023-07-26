@@ -30,8 +30,8 @@ const PatternDetail = () => {
 
   for (let i = 1; i <= pattern.number_of_images; i++) {
     images.push({
-      'original': `/patterns/${pattern.slug}/${i}.jpg`,
-      'thumbmail': `/patterns/${pattern.slug}/${i}.jpg`,
+      'original': `/patterns/${pattern.slug}/${i}.png`,
+      'thumbmail': `/patterns/${pattern.slug}/${i}.png`,
     })
   }
 

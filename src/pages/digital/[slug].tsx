@@ -27,8 +27,8 @@ const DigitalDetail = () => {
 
   for (let i = 1; i <= visual.number_of_images; i++) {
     images.push({
-      'original': `/digital-visuals/${visual.slug}/${i}.jpg`,
-      'thumbmail': `/digital-visuals/${visual.slug}/${i}.jpg`,
+      'original': `/digital-visuals/${visual.slug}/${i}.png`,
+      'thumbmail': `/digital-visuals/${visual.slug}/${i}.png`,
     })
   }
 

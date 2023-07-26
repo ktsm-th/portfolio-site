@@ -11,7 +11,7 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'header-img': "url('/header-img.jpg')"
+        'header-img': "url('/header-img.png')"
       },
       screens: {
         'sm-desktop': '1365px',

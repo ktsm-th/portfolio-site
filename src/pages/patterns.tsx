@@ -37,7 +37,7 @@ const Pattern = () => {
           key={index}
           name={pattern.name}
           link={`/patterns/${pattern.slug}`}
-          image={`/patterns/${pattern.slug}/1.jpg`}
+          image={`/patterns/${pattern.slug}/1.png`}
           mirror={ index % 2 == 1 ? true : false }
         />
       ))}

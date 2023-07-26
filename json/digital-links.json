@@ -13,7 +13,7 @@
     "description": "A Laravel API focusing on videogames and consoles. Uses Laravel Sail and MySQL",
     "repository_link":"https://github.com/ktsm-th/video-game-database-api",
     "live_link":"",
-    "number_of_images":"2"
+    "number_of_images":"1"
   },{
     "slug": "pokemon-search",
     "name": "Pokémon Search",

@@ -29,8 +29,8 @@ const PatternDetail = () => {
 
   for (let i = 1; i <= project.number_of_images; i++) {
     images.push({
-      'original': `/digital-links/${project.slug}/${i}.jpg`,
-      'thumbmail': `/digital-links/${project.slug}/${i}.jpg`,
+      'original': `/digital-links/${project.slug}/${i}.png`,
+      'thumbmail': `/digital-links/${project.slug}/${i}.png`,
     })
   }
 

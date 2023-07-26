@@ -37,7 +37,7 @@ const Development = () => {
           key={index}
           name={project.name}
           link={`development/${project.slug}`}
-          image={`/digital-links/${project.slug}/1.jpg`}
+          image={`/digital-links/${project.slug}/1.png`}
           mirror={ index % 2 == 1 ? true : false }
         />
       ))}

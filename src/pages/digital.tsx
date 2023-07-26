@@ -37,7 +37,7 @@ const Digital = () => {
           key={index}
           name={digital.name}
           link={`/digital/${digital.slug}`}
-          image={`/digital-visuals/${digital.slug}/1.jpg`}
+          image={`/digital-visuals/${digital.slug}/1.png`}
           mirror={index % 2 == 1 ? true : false}
         />
       ))}
