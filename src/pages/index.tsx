@@ -82,7 +82,7 @@ export default function About() {
         <h2 className="font-bold text-3xl mb-8 flex justify-center">WHO AM I?</h2>
         <div className="flex justify-center">
           <p className='w-auto max-w-3xl mb-8 tracking-wide'>
-            Hello! I'm Katie, an aspiring software developer and Textile Design graduate. I am self-taught, and learnt to code alongside studying for my degree and have
+            Hello! I&apos;m Katie, an aspiring software developer and Textile Design graduate. I am self-taught, and learnt to code alongside studying for my degree and have
             found that I love creating with React/Next.js and style frameworks, mainly Tailwind. I also have experience in the standard front-end languages
             (HTML, CSS, Javascript) and working alongside external APIs, as  well as my own APIs created in Laravel with unit tests.
           </p>
@@ -100,8 +100,8 @@ export default function About() {
         </div>
         <div className="flex justify-center">
           <p className='w-auto max-w-3xl mb-8 tracking-wide'>
-            From a more personal standpoint, I'm always listening to music and going to gigs - my favourite artists at the minute are Yard Act, New Order, Blink-182 and Pulp,
-            but I'm always listening to different things. In my spare time I play lots of different games and have a love for older consoles, I also love fitness, sewing,
+            From a more personal standpoint, I&apos;m always listening to music and going to gigs - my favourite artists at the minute are Yard Act, New Order, Blink-182 and Pulp,
+            but I&apos;m always listening to different things. In my spare time I play lots of different games and have a love for older consoles, I also love fitness, sewing,
             collecting plants and playing bass. Most importantly though I spend my time looking after my cat, Sushi.
           </p>
         </div>
