@@ -56,11 +56,11 @@ export default function About() {
                       link={"https://www.instagram.com/ktsm.thbcu/"}
                     />
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center hover:opacity-70">
                     <ContactPill
                       icon={"/icons/w-email.png"}
                       text={"hello@katiesmith.dev"}
-                      link={""}
+                      link={"mailto:hello@katiesmith.dev"}
                     />
                   </div>
                 </ul>
