@@ -21,6 +21,7 @@ export default function ListTile({ link, name, image, mirror = false }: ListTile
       <Link href={link}>
         <Image
           src={image}
+          loading="lazy"
           width={275}
           height={275}
           alt="Profile Image"

@@ -12,6 +12,7 @@ export default function GridImage({image, width, height}: GridImageProps) {
   <div className="mr-2 mb-2">
         <Image
         src={image}
+        loading="lazy"
         width={width}
         height={height}
         alt={""}
