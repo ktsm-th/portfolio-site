@@ -27,7 +27,7 @@ export default function About() {
           <h2 className="font-bold text-3xl">KATIE SMITH</h2>
           <h3 className="font-bold text-l">Software Developer & Textile Designer</h3>
           <div>
-            <p className="mt-8 tracking-wide">A Software Developer and Textile Design graduate with skills in both and front-end and back-end development (React/Next.js, Laravel). Eager to start a career within the tech industry to expand my skilset within a professional enviroment.</p>
+            <p className="mt-8 tracking-wide">A Software Developer and Textile Design graduate with skills in both and front-end and back-end development (React/Next.js, Laravel). Eager to start a career within the tech industry to expand my skillset within a professional enviroment.</p>
             <div className="inline-flex items-center justify-center w-full">
               <hr className="w-full lg:w-96 h-1 my-8 bg-black border-0 rounded" />
               <div className="absolute px-4 bg-black">

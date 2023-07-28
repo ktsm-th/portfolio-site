@@ -10,7 +10,7 @@ type ContactPillProps = {
 export default function SkillPill({ icon, text, link }: ContactPillProps) {
   return (
     <div className={"hover:drop-shadow-sm" }>
-      <Link href={link} className={"text-center text-white font-bold bg-black rounded w-fit pr-2.5 pl-2.5 h-8 flex justify-center items-center text-base mt-1 mr-1"}>
+      <Link href={link} className={"text-center text-white font-bold bg-black drop-shadow-[-4px_0px_0px_rgba(216,52,68,1)] rounded w-fit pr-2.5 pl-2.5 h-8 flex justify-center items-center text-base mt-1 mr-1"}>
         <Image
           src={icon}
           loading="lazy"
