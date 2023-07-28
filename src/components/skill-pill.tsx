@@ -8,7 +8,7 @@ type SkillPillProps = {
 
 export default function SkillPill({ icon, name }: SkillPillProps) {
   return (
-    <div className={"hover:drop-shadow-sm" }>
+    <div className={"hover:drop-shadow-sm flex" }>
       <p className={"text-center text-white font-bold bg-black rounded w-fit pr-2.5 pl-2.5 h-8 flex justify-center items-center text-base mt-1 mr-1"}>
         <Image
         src={icon}

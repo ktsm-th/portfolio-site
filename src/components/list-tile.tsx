@@ -18,13 +18,15 @@ export default function ListTile({ link, name, image, mirror = false }: ListTile
           <Link href={link}>DETAILS</Link>
         </button>
       </div>
-      <Image
-        src={image}
-        width={275}
-        height={275}
-        alt="Profile Image"
-        className=" border-8 border-black w-[275px] h-[275px] object-cover object-top"
-      />
+      <Link href={link}>
+        <Image
+          src={image}
+          width={275}
+          height={275}
+          alt="Profile Image"
+          className=" border-8 border-black w-[275px] h-[275px] object-cover object-top"
+          />
+        </Link>
     </div>
   )
 }

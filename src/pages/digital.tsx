@@ -27,7 +27,7 @@ const Digital = () => {
         <div className="inline-flex items-center justify-center w-full">
           <hr className="w-full h-1 my-8 bg-black  border-0 rounded" />
           <div className="absolute px-4 -translate-x-1/2 bg-white left-1/2">
-          <h3 className="font-bold text-center text-l">Examples of creative digital work, including visualisations, moodboards and digital living spaces. </h3>
+          <h3 className="font-bold text-center text-l w-96 lg:w-auto">Examples of creative digital work, including visualisations, moodboards and digital living spaces. </h3>
          </div>
         </div>
         </div>

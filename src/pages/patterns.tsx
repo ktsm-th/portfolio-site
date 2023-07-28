@@ -27,7 +27,7 @@ const Pattern = () => {
         <div className="inline-flex items-center justify-center w-full">
           <hr className="w-full h-1 my-8 bg-black  border-0 rounded" />
           <div className="absolute px-4 -translate-x-1/2 bg-white left-1/2">
-          <h3 className="font-bold text-center text-l">A range of patterns which emphasise my passion for hectic colour and abstract imagery. </h3>
+          <h3 className="font-bold text-center text-l w-96 lg:w-auto">A range of patterns which emphasise my passion for hectic colour and abstract imagery. </h3>
          </div>
         </div>
         </div>

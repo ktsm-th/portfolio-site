@@ -40,15 +40,14 @@ const PatternDetail = () => {
       <Head>
       <title>{pattern.name} | Katie Smith</title>
       </Head>
-      <div className="flex justify-center mt-8 mb-8">
-        <div className=" w-auto max-w-2xl border-8 border-black">
+      <div className="flex flex-col mx-4 lg:mx-0 lg:flex-row justify-center mt-8 mb-8">
+        <div className="w-auto max-w-2xl border-8 border-black">
           <ImageGallery additionalClass="" items={images} />
         </div>
-        <div className="w-96 ml-4">
+        <div className="flex flex-col items-center lg:block w-96 lg:ml-4">
           <h2 className="mt-4 font-bold text-3xl">{ pattern.name }</h2>
           <p className="mt-2">{ pattern.description }</p>
         </div>
-
       </div>
     </main>
   )

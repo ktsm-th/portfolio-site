@@ -9,13 +9,13 @@ type GridImageProps = {
 
 export default function GridImage({image, width, height}: GridImageProps) {
   return (
-  <div>
+  <div className="mr-2 mb-2">
         <Image
         src={image}
         width={width}
         height={height}
         alt={""}
-        className="mr-1 border-8 border-black"
+        className="border-8 border-black max-h-56 w-fit"
       />
     </div>
   )

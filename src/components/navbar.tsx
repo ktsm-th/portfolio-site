@@ -9,7 +9,6 @@ export default function Navbar() {
         <NavbarLink link="/development" text="Development" />
         <NavbarLink link="/patterns" text="Designs" />
         <NavbarLink link="/digital" text="Digital" />
-
       </ul>
     </nav>
   )
